@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/*---para el header---*/
+header {
+    height: 50px;
+    width: 100%;
+    background-color: white;    
+    border-bottom: 1px solid #e6ecf5;
+    z-index: 100;
+    display: block;
+}
+#bar-nav{
+    margin: 10px;
+    display: block;
+}
+/***------div navigation------***/
+#menu{
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+}
+.item-list {
+    display: inline-block;
+    line-height: 1;
+    margin: 10px;
+}
+.item-list a i{
+    font-weight: 700;
+    font-size: 17px;
+}
+.item-list a {
+    text-decoration: none;
+    color: #66757f;
+    font-weight: 700;
+    font-size: 15px;
+}
+.item-list a:hover {
+    /*border-bottom-color: #0099b9;*/
+    color: #0099b9;
+}
+/***------h1------***/
+
+.fa-logo {
+    display: inline-block;
+    position: relative;
+    float: left;
+    color: #0099b9;
+    font-size: 25px;
+    text-align: center;
+    margin-left:250px;
+    margin-right: 220px;
+}
+/***------form------***/
+
+div .form {
+    margin: 10px;
+    display: block;
+    position: relative;
+}
+form .search-input {
+    background-color: #f5f8fa;
+    border-radius: 21px;
+    color: #14171a;
+    font-size: 12px;
+    height: 32px;
+    line-height: 16px;
+    padding: 8px 32px 8px 12px;
+    width: 18%;
+    border: 1px solid #e6ecf0;
+    float: left;
+}
+form i {
+    position:absolute;
+    font-size: 20px;
+    float: left;
+    color: #66757f;
+}
+/***------perfil------***/
+#perfil {
+    margin: 10px;
+    display: inline-block;
+}
+#menu-perfil {
+    margin: 10px;
+    list-style: none;
+}
+#menu-perfil li {
+    display: inline-block;
+    float: left;
+    margin-right: 25px;
+}
+#avatar a img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+    margin-left: 35px;
+}
+#btn button {
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+}
+/*---para main---*/
+main {
+    background-color: #e6ecf0;
+    padding-top: 20px;
+}
+
+/*---para section---*/
+.container{
+    background-color: white;
+    column-count: 3;
+    margin: 10px;
+}
+#content1,#content3 {
+    width: 25%;
+}
+#content2 {
+    width: 55%;
+}
+
