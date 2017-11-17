@@ -240,6 +240,34 @@ div #card-name {
   color: #0099B9;
   border:1px solid #b6ecea;
 }
+#content2 #text-box .text-icon {
+  display: block;
+  float: right;
+}
+#content2 .text-icon span i {
+  font-size: 19px;
+  position: absolute;
+  left: 548px;
+  right: 20px;
+  top: 21px;
+}
+.box-svg {
+  margin-left: 450px;
+  display: block;
+}
+#box-icon button {
+  margin: 5px;
+  height: 30px;
+  width: 40px;
+  display:block;
+  position: relative;
+  float: left;
+  font-size: 16px;
+  background-color: #e5f4f8;
+  color: #1da1f2;
+  border: none;
+  border-radius: 6px;
+}
 /*para agregar con el js form  div class=box-tweet span */
 .form-tweet {
   height: 50%;
@@ -257,18 +285,6 @@ div #card-name {
     display: block;
 }
 /*----------------------------*/
-#content2 #text-box .text-icon {
-  display: block;
-  float: right;
-}
-
-#content2 .text-icon span i {
-  font-size: 19px;
-  position: absolute;
-  left: 548px;
-  right: 20px;
-  top: 21px;
-}
 #content3 {
     width: 80%;
     height: 22%;
