@@ -257,6 +257,13 @@ div #card-name {
   right: 20px;
   top: 21px;
 }
+label {
+    color: black;
+    background-color: antiquewhite;
+    width: 150px;
+    text-align: center;
+    font-weight: 400;
+}
 .box-count {
   height: 40px;
   width: 40px;
@@ -265,7 +272,19 @@ div #card-name {
   border-radius: 50%;
   position: absolute;
   background-color: antiquewhite;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  padding: 12px;
 }
+/*-----estilos para el contador-------*/
+.blue {
+    color: #0366D6;
+}
+.red {
+    color: coral;
+}
+/********************************/
 #tweet-toolbar{
   background-color: #e5f4f8;
   padding-left: 75px;
@@ -292,7 +311,7 @@ div #card-name {
   border-color: #0099B9;
   border: 1px solid transparent;
 }
-#box-button button {
+.disable-btn {
   background-color: #0099B9;
   border-color: #0099B9;
   color: white;
@@ -302,16 +321,25 @@ div #card-name {
   font-weight: 700;
   width: 100px;
   height: 35px;
-  opacity: .3;
   border-style:double; 
   border-radius: 25px;
   cursor: not-allowed;
+  opacity: .3;
 }
 .enable-btn{
   background-color: #0099B9;
   border-color: #0099B9;
+  opacity: 100;
   color: white;
   cursor: pointer;
+  margin-top: 7px;
+  margin-left: 150px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100px;
+  height: 35px;
+  border-style:double; 
+  border-radius: 25px;
 }
 .form-tweet {
   height: 10px;
@@ -332,7 +360,7 @@ div #card-name {
 }
 .my-tweets{
   width: 580px;
-  height: 8%;
+  height: 9%;
   padding: 10px;
   display: inline-block;
   border: none;
