@@ -13,5 +13,4 @@ btnTweet.addEventListener('click', function(event) {
   var tweet = divTweet.appendChild(cloneText);
   divTweet.insertBefore(tweet,divTweet.childNodes[1]).classList.add('my-tweets');
 });
-
 });
