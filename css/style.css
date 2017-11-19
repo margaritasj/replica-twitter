@@ -4,12 +4,17 @@
     font-family: 'Roboto', sans-serif;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    cursor: default;
+}
+a, li, ul, span, i, button {
+    cursor: pointer;
 }
 a {
     text-decoration: none;
 }
 ul {
     list-style: none;
+  
 }
 /*---para el header---*/
 header {
@@ -82,6 +87,7 @@ div .form {
     float: left;
     position: absolute;
     margin-left: 950px;
+    cursor: text;
 }
 form  .form-search {
       display: block;
@@ -233,7 +239,7 @@ div #card-name {
   margin-left: 10%;
   padding: 10px;
   width: 90%;
-  height: 38px;
+  height: 190px;
   background-color: white;
   border-radius: 8px;
   font-size: 14px;
@@ -251,44 +257,133 @@ div #card-name {
   right: 20px;
   top: 21px;
 }
-.box-svg {
-  margin-left: 450px;
-  display: block;
+.box-count {
+  height: 40px;
+  width: 40px;
+  margin-top: 130px;
+  margin-left: 440px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: antiquewhite;
+}
+#tweet-toolbar{
+  background-color: #e5f4f8;
+  padding-left: 75px;
+  height: 50px;
 }
 #box-icon button {
-  margin: 5px;
-  height: 30px;
-  width: 40px;
+  margin: 8px;
+  height: 40px;
+  width: 45px;
   display:block;
   position: relative;
   float: left;
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 700;
   background-color: #e5f4f8;
   color: #1da1f2;
   border: none;
   border-radius: 6px;
 }
-/*para agregar con el js form  div class=box-tweet span */
+#box-icon button:hover {
+  border-color: #1da1f2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(0,153,185,0.1)));
+  background-image: linear-gradient(rgba(255,255,255,0), rgba(0,153,185,0.1));
+  border-color: #0099B9;
+  border: 1px solid transparent;
+}
+#box-button button {
+  background-color: #0099B9;
+  border-color: #0099B9;
+  color: white;
+  margin-top: 7px;
+  margin-left: 150px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100px;
+  height: 35px;
+  opacity: .3;
+  border-style:double; 
+  border-radius: 25px;
+  cursor: not-allowed;
+}
+.enable-btn{
+  background-color: #0099B9;
+  border-color: #0099B9;
+  color: white;
+  cursor: pointer;
+}
 .form-tweet {
-  height: 50%;
+  height: 10px;
+  border: none;
 }
-.box-tweet{
-  color: black;
-  font-size: 14px;
-  display: block;
-  max-height: 180px;
-  border: 2px solid #99d6e3;
-  color: #657786;
+/*Para dar el atributo placeholder a mi div*/
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(placeholder);
 }
+/*-----------------------------------*/
 .editable{
-    max-width: 440px;
-    display: block;
+  width: 440px;
+  height: 170px;
+  display: block;
+  border:none;
+  cursor: text;
+  position: absolute;
+}
+.my-tweets{
+  width: 580px;
+  height: 8%;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  cursor: text;
+  position: relative;
+  margin: 6px;
+  background-color: #f5f8fa;
+  border-radius: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+
 }
 /*----------------------------*/
 #content3 {
     width: 80%;
     height: 22%;
     margin-right: 6%;
+}
+h3{
+  padding: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+.img-chrome {
+  width: 20%;
+  height: 20%;
+  margin: 15px;
+  display: inline-block;
+}
+.follow a {
+    padding: 25px;
+    display: block;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1da1f2;
+}
+#btn-follow {
+  width: 90px;
+  height: 30px;
+  margin: 15px;
+  background-color: white;
+  border: 2px solid #1da1f2;
+  color: #1da1f2;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  border-radius: 25px;
 }
 
 

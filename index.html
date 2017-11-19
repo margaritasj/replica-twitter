@@ -80,16 +80,14 @@
         <div id="tweet-box">
           <div id="tweet-form">
             <img src="assets/images/perfil.jpg" alt="">
-            <form class="" action="">
-              <div id="text-box" class="">
-                <span contenteditable="true" class="">¿Qué está pasando?</span>
+            <form class="form-tweet" action="">
+              <div id="text-box" class="box-tweet">
+                <div id="set-text" contenteditable="true" placeholder="¿Qué está pasando?" class="editable"></div>
                 <div class="text-icon">
-                  <span><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-smile-o" aria-hidden="true"></i></span>
                 </div>
-                <div class="box-svg">
-                  <svg height="50" width="50">
-                    <circle cx="25" cy="25" r="5" stroke="gray" stroke-width="1" fill="white" />
-                  </svg>
+                <div class="box-count">
+                  <label for=""></label>
                 </div>
               </div> 
             </form>
@@ -98,17 +96,25 @@
             <div id="box-icon">
               <button><i class="fa fa-picture-o" aria-hidden="true"></i></button>
               <button><i class="fa fa-picture-o" aria-hidden="true"></i></button>
-              <button><i class="fa fa-picture-o" aria-hidden="true"></i></button>
+              <button><i class="fa fa-align-left" aria-hidden="true"></i></button>
+              <button><i class="fa fa-map-marker" aria-hidden="true"></i></button>
             </div>
             <div id="box-button" class="display-none">
               <button id="submit" type="submit">Twittear</button>
             </div>
           </div>
+          <p id="text-tweet">
+          </p>
         </div> 
       </section>
       <section id="content3" class="container">
         <div>
-                    
+          <h3> A quién seguir </h3>
+          <div class="follow">
+            <img class="img-chrome" src="assets/images/chrome.png" alt="">
+            <a href="#">Google Chrome</a>
+            <button id="btn-follow" type="submit">Seguir</button>
+          </div>     
         </div>
       </section>
     </main>
