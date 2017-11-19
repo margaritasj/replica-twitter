@@ -1,6 +1,5 @@
 /* jshint browser: true */
 window.addEventListener('load', function(event) {
-  
 var divText = document.getElementById('set-text');
 var btnTweet = document.getElementById('submit');
 var divTweet = document.getElementById('text-tweet');
