@@ -131,11 +131,11 @@ div #perfil {
 }
 /*---para main---*/
 main {
-    background-color: #e6ecf0;
-    -webkit-column-count: 3;
-    column-count: 3;
-    padding-top: 55px;
-    height: 1500px;
+  background-color: #e6ecf0;
+  -webkit-column-count: 3;
+  column-count: 3;
+  padding-top: 55px;
+  height: 1500px;
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -224,8 +224,19 @@ div #card-name {
     padding: 2%;
     padding-left: 4%;
     background-color: #e5f4f8;
-    height: 8%;
+    height: 300px;
     width: 100%;
+}
+.form-resize {
+  cursor: text;
+  position: static;
+  white-space: normal;
+  word-wrap: break-word;
+  display: block;
+  width: 500px;
+  height: 200px;
+  min-height: 250px;
+  border:1px solid #b6ecea;
 }
 #content2 #tweet-form img{
     width: 45px;
@@ -238,13 +249,16 @@ div #card-name {
   display: block;
   margin-left: 10%;
   padding: 10px;
-  width: 90%;
+  width: 500px;
   height: 190px;
   background-color: white;
   border-radius: 8px;
   font-size: 14px;
   color: #0099B9;
   border:1px solid #b6ecea;
+}
+.box-tweet {
+  height: 600px;
 }
 #content2 #text-box .text-icon {
   display: block;
@@ -417,7 +431,12 @@ h3{
   display: inline-block;
   border-radius: 25px;
 }
-
+.hour {
+    font-size: 16px;
+    padding-left: 10px;
+    display: block;
+  
+}
 
 
 
