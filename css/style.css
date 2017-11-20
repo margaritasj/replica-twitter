@@ -262,7 +262,7 @@ label {
     background-color: antiquewhite;
     width: 150px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
 }
 .box-count {
   height: 40px;
@@ -272,17 +272,22 @@ label {
   border-radius: 50%;
   position: absolute;
   background-color: antiquewhite;
-  color: black;
   font-size: 12px;
   text-align: center;
   padding: 12px;
 }
 /*-----estilos para el contador-------*/
+.black {
+    color: black;
+}
 .blue {
     color: #0366D6;
 }
+.orange {
+    color: orangered;
+}
 .red {
-    color: coral;
+    color: red;
 }
 /********************************/
 #tweet-toolbar{
