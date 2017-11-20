@@ -19,20 +19,16 @@ window.addEventListener('load', function(event) {
     if (cloneText.innerHTML === '') {
       divTweet.insertBefore(tweet,divTweet.childNodes[1]).classList.remove('my-tweets');
     } else {
-      
       var time = moment().format('LT');
       btnTweet.disabled = true;
       btnTweet.classList.add('disable-btn');
       btnTweet.classList.remove('enable-btn');
       divTweet.insertBefore(tweet, divTweet.childNodes[1]).classList.add('my-tweets');
-      
-      var hour = document.createElement('p');    
-      hour.className = 'hour';
-      hour.textContent =  time;
-      divTweet.appendChild(hour,divTweet);
+      var hour = document.createTextNode(time);
+      divTweet.appendChild(hour, divTweet);
       divText.innerHTML = '';   
-      divText.innerHTML = '';
       labelCount.innerHTML = '';
+
     }
   });
   divText.addEventListener('keydown', function(event) {
