@@ -27,10 +27,14 @@ window.addEventListener('load', function(event) {
   divText.addEventListener('keydown', function(event) {
     var caracteres = divText.innerHTML;
     if (event) {
-      labelCount.innerHTML = caracteres.length + 1;
+      labelCount.innerHTML = 140 - caracteres.length ;
       btnTweet.disabled = true;
       btnTweet.classList.remove('disable-btn');
       btnTweet.classList.add('enable-btn');
+    /* V 0.0.3 */  
+    //Si pasa los 140 caracteres, deshabilitar el botón.
+    //Si pasa los 120 caracteres, mostrar el contador con OTRO color.
+    //Si pasa los 130 caracteres, mostrar el contador con OTRO color
       if (caracteres.length <= 140 ) {
         btnTweet.disabled = false;
         labelCount.classList.add('black');
@@ -39,21 +43,21 @@ window.addEventListener('load', function(event) {
         btnTweet.classList.remove('enable-btn');
         btnTweet.classList.add('disable-btn');
       }
-      if (caracteres.length >= 121 && caracteres.length < 130 ) {
+      if ( 120 < caracteres.length && caracteres.length <= 130) {
         labelCount.classList.add('blue');
-      } else if (caracteres.length >= 131 && caracteres.length < 140) {
+      } else if ( 130 < caracteres.length && caracteres.length <= 140 ) {
         labelCount.classList.add('orange');
       } else if (caracteres.length > 140) {
         labelCount.classList.add('red');
       } else {
         labelCount.classList.remove('red');
       }
-    } else {
-        labelCount.innerHTML = caracteres.length - caracteres.length;
-    }
-
+    } 
   });
 
+
+
+  
   
 });
 
